@@ -1,0 +1,34 @@
+=== GRAMÁTICA ===
+S → E
+
+E → E + T
+  | E - T
+  | T
+  | B
+
+T → int
+
+B → bool
+
+=== FIRST ===
+B: {bool,}
+S: {bool,int,}
+E: {bool,int,}
+T: {int,}
+
+=== FOLLOW ===
+B: {EOF,+,-,}
+S: {EOF,}
+E: {EOF,+,-,}
+T: {EOF,+,-,}
+
+============================
+
+Estado 0:
+0: S → . E {EOF}
+1: E → . E + T {EOF}
+2: E → . E - T {EOF}
+3: E → . T {EOF}
+4: E → . B {EOF}
+
+Estado 1: (Leu um E)

@@ -1,0 +1,5 @@
+lispistapa a = [10, 20];
+
+paparapa (inpintepe i = 0; i < 2; i = i + 1)
+    a[i] = 100 + i;
+fimpim

@@ -1,0 +1,66 @@
+CePe: Linguagem de programação compilada, baseada na língua do pê.
+Eu já queria fazer uma linguagem de programação há um tempo, e decidi fazer
+uma mais divertida e descontraída. Além disso, queria fazer algo que fosse 
+ligado à minha vivência. Então, decidi fazê-la em português, e na língua do pê.
+
+Tipos de dados: int, float, char, string, list e bool
+
+
+===== OPERADORES =====
+
+-- MATEMÁTICOS --
++ : Adição
+- : Subtração
+* : Multiplicação
+/ : Divisão
++=, -=, *= e /= : Realizam uma das operações acima com o operando no lado esquerdo
+
+-- BOOLEANOS -- 
+ipigualpal  : igual (==)
+naopao      : negação (!)
+epe         : and (&&)
+oupou       : or (||)
+>  : Maior que
+>= : Maior ou igual a
+<  : Menor que
+<= : Menor ou igual a
+
+
+===== COMANDOS =====
+Todo comando vai terminar com um ponto e vírgula
+
+-- Declaração de variável --
+<tipo> <id> = <valor>
+
+-- Definição de função --
+<função> <id> <parametros> <cmds> <fim>
+
+-- Loop For --
+<para> <exprs> <cmds> <fim>
+
+-- Loop While --
+<enquanto> <expr> <cmds> <fim>
+
+-- If-else --
+<se> <expr> <enpentãopão> <cmds> <fim>
+<se> <expr> <enpentãopão> <cmds> <senão> <cmds> <fim>
+<se> <expr> <enpentãopão> <cmds> <senão> <cmds> <fim>
+
+===== LEXER =====
+Pega um arquivo e retorna uma série de tokens
+
+Como reconhecer tokens?
+Precisa de uma variável pra armazenar o char atual
+Precisa de outra pra armazenar a sequência atual
+
+TOKENS:
+- ID: Identificadores
+- INT: declaração de variável
+- FLOAT: declaração de variável
+- CHAR: declaração de variável
+- STRING: declaração de variável
+- LIST: declaração de variável
+
+===== PARSER =====
+Objeto ou função?
+Precisa fazer o seu próprio objeto?
